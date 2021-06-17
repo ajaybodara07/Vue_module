@@ -71,7 +71,6 @@ export default {
       TutorialDataService.getAll()
         .then(response => {
           this.tutorials = response.data;
-          console.log(response.data);
         })
         .catch(e => {
           console.log(e);
@@ -92,7 +91,6 @@ export default {
     removeAllTutorials() {
       TutorialDataService.deleteAll()
         .then(response => {
-          console.log(response.data);
           this.refreshList();
         })
         .catch(e => {
