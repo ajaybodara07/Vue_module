@@ -20,7 +20,6 @@
         {{ currentTutorial.published ? "Published" : "Pending" }}
       </div>
     </form>
-
     <button class="badge badge-primary mr-2"
       v-if="currentTutorial.published"
       @click="updatePublished(false)"
@@ -32,13 +31,11 @@
     >
       Publish
     </button>
-
     <button class="badge badge-danger mr-2"
       @click="deleteTutorial"
     >
       Delete
     </button>
-
     <button type="submit" class="badge badge-success"
       @click="updateTutorial"
     >
@@ -46,7 +43,6 @@
     </button>
     <p>{{ message }}</p>
   </div>
-
   <div v-else>
     <br />
     <p>Please click on a Tutorial...</p>

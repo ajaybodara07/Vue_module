@@ -1,5 +1,6 @@
 import http from "../http-common";
 
+// all route data here
 class TutorialDataService {
   getAll() {
     return http.get("/tutorials");
